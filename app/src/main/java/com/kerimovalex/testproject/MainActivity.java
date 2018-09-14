@@ -100,9 +100,8 @@ public class MainActivity extends Activity implements Constant {
         online.setText(item.getIsOnline());
         location.setText(item.getCountryName());
         sold.setText("Sold " + String.valueOf(item.getProfileSolos().getHotSalesCnt()) + " solos in the last couple of days");
-        Log.d("XXX", item.getClickPrice() + "/n" + Integer.parseInt(item.getOrdersClicks()) + "/n" + Integer.parseInt(item.getOrdersClicks()));
         double p = Math.ceil(Math.round(item.getClickPrice() * Integer.parseInt(item.getOrdersClicks()))
-                + Math.round(Integer.parseInt(item.getOrdersClicks()) + 3.00));
+                + Math.round((item.getClickPrice() * Integer.parseInt(item.getOrdersClicks())) + 3.00));
         seekBar.incrementProgressBy(50);
         button.setText("Add to card($" + p + ")");
         materialProgressDialog.dismiss();
