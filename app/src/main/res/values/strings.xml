@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">TestProject</string>
+    <string name="symbol">/</string>
+    <string name="ratings_text">Ratings with \"Got Sales\" badge: </string>
+    <string name="no_mobile">No mobile</string>
+    <string name="prime_filter">Prime filter</string>
+    <string name="only_top_tier">Only top tier</string>
+    <string name="only_mobile">Only mobile</string>
+    <string name="internet_connection_error">Internet connection error</string>
+    <string name="no_internet_connection">No internet connection</string>
+    <string name="server_error">Server Error</string>
+</resources>
